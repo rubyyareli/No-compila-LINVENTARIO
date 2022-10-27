@@ -1,9 +1,11 @@
 import React, { Fragment } from 'react';
 import { useNavigate  } from "react-router-dom";
 import { FiUser, FiClock,FiUsers,FiCheckCircle } from "react-icons/fi";
-import { MdOutlineCategory,MdAutoGraph,MdOutlineMarkEmailRead,MdOutlineLocationOn, } from "react-icons/md";
+import { MdOutlineCategory,MdAutoGraph,MdOutlineMarkEmailRead,MdOutlineLocationOn,MdImportantDevices } from "react-icons/md";
 import { RiComputerLine,RiFacebookCircleLine } from "react-icons/ri";
-import { AiOutlineLike,AiOutlineThunderbolt,AiOutlineBarChart } from "react-icons/ai";
+import { AiOutlineLike,AiOutlineThunderbolt,AiOutlineBarChart,AiOutlineCloudServer } from "react-icons/ai";
+import {FcMultipleSmartphones} from "react-icons/fc";
+import {HiDevicePhoneMobile} from "react-icons/hi2";
 
 import {
   Container, Button, CardText, ListGroup, ListGroupItem,Row,Col,Card,CardImg,CardBody,
@@ -30,7 +32,7 @@ export const Index = () => {
         <Row className='flex-grow-1 justify-content-center h-100"' >
 
           <Col sm="4">
-            <HeroImage></HeroImage>
+            <AiOutlineCloudServer style={{color: '#82ACEF', fontSize: '300px', display: 'inline'}} />
           </Col>
           <Col sm="6">
             <HeroTitle className="">TU INVENTARIO EN LÍNEA</HeroTitle>
@@ -68,12 +70,12 @@ export const Index = () => {
               </PChico>
           </Col>
 
-          <HeroImage1></HeroImage1>
+          <MdImportantDevices style={{color: '#82ACEF', fontSize: '300px', display: 'inline',marginTop:'50px', marginBottom:'50px'}} />
 
           <PGrande>CARACTERÍSTICAS</PGrande>
 
           <Col sm="4">
-            <HeroImage></HeroImage>
+            <HiDevicePhoneMobile style={{color: '#82ACEF', fontSize: '300px', display: 'inline',  marginTop: '32%'}} />
           </Col>
           <Col sm="6">
             <HeroTitle className="">TU INVENTARIO EN LÍNEA</HeroTitle>
