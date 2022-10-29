@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Login } from './pages/login';
 import { Register } from './pages/register';
 import { Index } from './pages/index';
+import { newProduct } from './pages/newProduct';
+import { newTransaction } from './pages/newTransaction';
 
 export const App = () => {
 
@@ -16,6 +18,8 @@ export const App = () => {
       <Route exact path="/register" element={<Register />}></Route>
       <Route exact path="/main" element={<Main />}></Route>
       <Route exact path="/login" element={<Login />}></Route>
+      <Route exact path="/newProduct" element={<newProduct />}></Route>
+      <Route exact path="/newTransaction" element={<newTransaction />}></Route>
       </Routes>
     </Router>
   </div>

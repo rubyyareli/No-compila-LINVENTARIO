@@ -6,11 +6,13 @@ import { Footer } from '../footer';
 import { Announcement } from '../announcement/announcement';
 import { SlideShow } from '../slideshow/slideshow';
 import { LOGIN_PAGE } from './../../../utils/colors';
+import { NavLink } from 'reactstrap';
+import { NavLink as RRNavLink } from 'react-router-dom';
 
 const navbaritems = [
   {
     text: 'Inicio',
-    link: 'www.google.com',
+    link: 'index',
   },
   {
     text: 'Acerca',
@@ -50,8 +52,13 @@ const footeritems = [
 export const View = (props) => {
   return (
     <Container fluid>
-      <Row>
-        <Header theme={props.theme} items={navbaritems}></Header>
+      <Row >
+        <Header tag={RRNavLink} to={navbaritems.link} theme={props.theme} items={navbaritems}></Header>
+        <NavLink tag={RRNavLink} to="/">Inicio</NavLink>
+        <NavLink tag={RRNavLink} to="/register">Registrarse</NavLink>
+        <NavLink tag={RRNavLink} to="/login">Iniciar sesión</NavLink>
+        <NavLink tag={RRNavLink} to="/newProduct">Producto</NavLink>
+        <NavLink tag={RRNavLink} to="/newTransaction">Transaccion</NavLink>
       </Row>
 
 
