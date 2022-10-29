@@ -27,14 +27,13 @@ export const HeroDescription = styled.p`
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 10px;
   text-align: left;
-  margin-left: 30%;
 `;
 
 export const HeroParrafo1 = styled.p`
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding-top: 5%;
-  text-align: center
+  text-align: center;
 `;
 
 export const HeroParrafo2 = styled.p`
@@ -45,13 +44,31 @@ export const HeroParrafo2 = styled.p`
   padding-bottom:5%;
 `;
 
+export const PGrande = styled.p`
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+`;
+
+export const PChico = styled.p`
+  font-size: 14px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+`;
+
+export const HeroLINVENTARIO = styled.p`
+  font-size:30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 3%;
+  text-align: center;
+`;
+
 export const HeroTitle = styled.div`
   font-size: 30px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 10px;
   text-align: left;
-  margin-left: 30%;
-  margin-top: 4%;
+  margin-top: 8%;
 `;
 
 export const HeroSubTitle = styled.div`
@@ -59,7 +76,6 @@ export const HeroSubTitle = styled.div`
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 10px;
   text-align: left;
-  margin-left: 30%;
 `;
 
 export const HeroTextButton = styled.button`
