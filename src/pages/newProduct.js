@@ -3,32 +3,32 @@ import { useNavigate  } from "react-router-dom";
 import Linlogo from './../res/Linventario_icon.png';
 import Background from './../res/rects2.png';
 
-import { Container, 
-  CardText, 
-  Col, 
-  Button, 
-  Row, 
-  CardTitle, 
-  Form, 
-  FormGroup, 
-  Label, 
-  Input, 
-  Card, 
-  CardHeader, 
+import { Container,
+  CardText,
+  Col,
+  Button,
+  Row,
+  CardTitle,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Card,
+  CardHeader,
   CardBody,
-  CardImg, 
+  CardImg,
   FormText } from 'reactstrap';
 
 
 import { View } from './../components/page/view/view';
 import { MAIN_PAGE } from './../utils/colors';
 
-export const newProduct = () => {
+export const NewProduct = () => {
   let navigate = useNavigate();
 
   return (
     <div style={{ backgroundImage: `url(${Background}) `, backgroundRepeat: 'no-repeat', backgroundSize:'cover' }} >
-      
+
     <View theme={MAIN_PAGE} banner={''} className="text-center" >
 
 
@@ -39,24 +39,24 @@ export const newProduct = () => {
 
         <Row className="m-auto align-self-center">
 
-          <Card border="dark" 
-    
-    
+          <Card border="dark"
+
+
     style={{
       width: '69rem',
       boxShadow:'0px 15px 26px rgba(0, 0, 0, 0.50)',
       padding: '20px'
     }}
   >
-    
+
     <CardTitle tag="h2" className="text-center" style={{fontFamily:'Cochin'}}>
               Nuevo Producto
               </CardTitle>
-    
+
     <CardBody className="align-items-center">
       <CardText tag="h5" className="m-auto align-self-center">
       <Form className="m-auto align-self-center">
-        
+
 
         <FormGroup row className="text-center">
           <Label for="productName" sm={2} style={{padding:'5px', fontFamily:'Cochin' }}>Nombre del producto</Label>
@@ -73,7 +73,7 @@ export const newProduct = () => {
             style={{
               boxShadow:'0px 7px 19px rgba(0, 0, 0, 0.40)'
             }}>
-              </Input>  
+              </Input>
           </Col>
         </FormGroup>
 

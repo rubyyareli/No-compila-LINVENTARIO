@@ -1,18 +1,27 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { Container, Row, Col,Navbar,
+  NavItem,
+  NavbarToggler,
+  Collapse,
+  NavLink,
+  Nav,
+  NavbarBrand,
+  CardImg } from 'reactstrap';
 import { Header } from '../header/header';
 import { Content } from '../content';
 import { Footer } from '../footer';
 import { Announcement } from '../announcement/announcement';
 import { SlideShow } from '../slideshow/slideshow';
 import { LOGIN_PAGE } from './../../../utils/colors';
-import { NavLink } from 'reactstrap';
 import { NavLink as RRNavLink } from 'react-router-dom';
+import Linlogo from '/src/res/Linventario_icon.png';
 
 const navbaritems = [
   {
-    link: 'www.google.com',
-    scr: 'https://images.emojiterra.com/google/noto-emoji/v2.034/512px/2764.png',
+    text: 'Inicio',
+    link: 'index',
   },
   {
     text: 'Acerca',
@@ -36,7 +45,7 @@ const navbaritems = [
   },
   {
     text: 'Ingresar',
-    link: '/login',
+    link: 'www.google.com',
   },
   {
   },
@@ -49,16 +58,30 @@ const footeritems = [
   }
 ];
 
+var logedIn = false;
+
 export const View = (props) => {
   return (
     <Container fluid>
       <Row >
-        <Header tag={RRNavLink} to={navbaritems.link} theme={props.theme} items={navbaritems}></Header>
-        <NavLink tag={RRNavLink} to="/">Inicio</NavLink>
-        <NavLink tag={RRNavLink} to="/register">Registrarse</NavLink>
-        <NavLink tag={RRNavLink} to="/login">Iniciar sesión</NavLink>
-        <NavLink tag={RRNavLink} to="/newProduct">Producto</NavLink>
-        <NavLink tag={RRNavLink} to="/newTransaction">Transaccion</NavLink>
+      <Navbar color="light" light expand="md">
+        <Nav className="mr-auto" navbar>
+        <NavbarBrand href="/"><CardImg
+                        alt="Linv logo"
+                        src={Linlogo}
+                        style={{
+                          width: 200,
+                        }}
+                        width="100%"
+                      /></NavbarBrand>
+          <NavLink tag={RRNavLink} to="/">Inicio</NavLink>
+          <NavLink tag={RRNavLink} to="/login">Iniciar sesión</NavLink>
+          <NavLink tag={RRNavLink} to="/register">Registrarse</NavLink>
+          <NavLink tag={RRNavLink} to="/newProduct">Producto</NavLink>
+          <NavLink tag={RRNavLink} to="/newTransaction">Transaccion</NavLink>
+          <NavLink tag={RRNavLink} to="/dashboard">Menu</NavLink>
+          </Nav>
+        </Navbar>
       </Row>
 
 

@@ -3,32 +3,32 @@ import { useNavigate  } from "react-router-dom";
 import Linlogo from './../res/Linventario_icon.png';
 import Background from './../res/rects.png';
 
-import { Container, 
-  CardText, 
-  Col, 
-  Button, 
-  Row, 
-  CardTitle, 
-  Form, 
-  FormGroup, 
-  Label, 
-  Input, 
-  Card, 
-  CardHeader, 
+import { Container,
+  CardText,
+  Col,
+  Button,
+  Row,
+  CardTitle,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Card,
+  CardHeader,
   CardBody,
-  CardImg, 
+  CardImg,
   FormText } from 'reactstrap';
 
 
 import { View } from './../components/page/view/view';
 import { MAIN_PAGE } from './../utils/colors';
 
-export const newTransaction = () => {
+export const NewTransaction = () => {
   let navigate = useNavigate();
 
   return (
     <div style={{ backgroundImage: `url(${Background}) `, backgroundRepeat: 'no-repeat', backgroundSize:'cover' }} >
-      
+
     <View theme={MAIN_PAGE} banner={''} className="text-center" >
 
 
@@ -39,20 +39,20 @@ export const newTransaction = () => {
 
         <Row className="m-auto align-self-center">
 
-          <Card border="dark" 
-    
-    
+          <Card border="dark"
+
+
     style={{
       width: '62rem',
       boxShadow:'0px 15px 26px rgba(0, 0, 0, 0.50)',
       padding: '20px'
     }}
   >
-    
+
     <CardTitle tag="h1" className="text-center" style={{fontFamily:'Cochin'}}>
               Nueva transacción
               </CardTitle>
-    
+
     <CardBody className="align-items-center">
       <CardText tag="h5" className="m-auto align-self-center">
       <Form className="m-auto align-self-center">
@@ -77,7 +77,7 @@ export const newTransaction = () => {
             <option>USB 8GB</option>
             <option>Tarjeta de video RTX 3050</option>
             <option>Disco duro 1trb</option>
-              </Input>  
+              </Input>
           </Col>
         </FormGroup>
         <FormGroup row className="text-center">
