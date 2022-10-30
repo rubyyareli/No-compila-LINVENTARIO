@@ -5,12 +5,12 @@ export const pageColors = {
     darkText: '#f2f9ff',
     lightText: '#062138',
     navbar: '#f4f4f4',
-    navbarLinkText: 'hsl(215, 51%, 62%)',
+    navbarLinkText: '#2B4DDB', //
     navbarLinkTextHover: '#1f2835',
     navbarLinkTextActive: '#6685b5',
-    navbarLink: '#f2f2f2',
+    navbarLink: '#f2f2f2', //
     navbarLinkHover: '#dcdcdc',
-    navbarLinkActive: '#dfdfdfff',
+    navbarLinkActive: '#82ACEF', //
     background: '#2e25d9'
   },
   Main: {

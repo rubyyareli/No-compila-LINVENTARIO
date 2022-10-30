@@ -11,8 +11,8 @@ import {
   CardBody
 } from 'reactstrap';
 
-import { View } from './../components/page/view/view';
-import { LOGIN_PAGE } from './../utils/colors';
+import { View } from '../components/page/view/view';
+import { LOGIN_PAGE } from '../utils/colors';
 import logo from './../res/logoTemp.png';
 import Linlogo from './../res/Linventario_icon.png';
 import LinlogoS from './../res/Linventario_iconMin.png';
@@ -44,7 +44,7 @@ export const Register = () => {
 
           <Col lg="6" style={{width: 400,}}>
             <Card >
-              <h3 className="text-center" style={{padding: '10px'}}>Registro</h3>
+              <h3 className="text-center" style={{padding: '10px',  fontFamily:'Cambria, Cochin, Georgia, Times,Times New Roman, serif'}}>Registro</h3>
               <CardBody>
                 <Container>
                   <Row>
@@ -71,7 +71,7 @@ export const Register = () => {
                     </Col>
 
                     <Container padding= "100px">
-                    <h6 className="text-center" style={{padding: '10px'}}>¿Ya tienes cuenta?  <a href="login.js">Inicia sesión</a></h6>
+                    <h6 className="text-center" style={{padding: '10px',fontFamily:'Cambria, Cochin, Georgia, Times,Times New Roman, serif'}}>¿Ya tienes cuenta?  <a href="login.js">Inicia sesión</a></h6>
                     </Container>
 
                   </Row>

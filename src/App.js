@@ -1,23 +1,20 @@
 import React from 'react';
 import { Main } from './pages/main';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Login } from './pages/login';
-import { Register } from './pages/register';
-import { Index } from './pages/index';
+import { Login } from './login/login';
+import { Register } from './register/register';
+import { Index } from './index/index';
 
 export const App = () => {
 
   return(
-
-  <div className="App">
     <Router>
       <Routes>
-      <Route exact path="/" element={<Index />}></Route>
-      <Route exact path="/register" element={<Register />}></Route>
-      <Route exact path="/main" element={<Main />}></Route>
-      <Route exact path="/login" element={<Login />}></Route>
+      <Route exact path="/" element={<Index />}/>
+      <Route path="/login" element={<Login />}/>
+      <Route path="/register" element={<Register/>}/>
+      <Route path="/main" element={<Main />}/>
       </Routes>
     </Router>
-  </div>
   );
 };

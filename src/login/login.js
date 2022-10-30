@@ -46,7 +46,7 @@ export const Login = () => {
 
           <Col lg="6" style={{width: 400,}}>
             <Card >
-              <h3 className="text-center" style={{padding: '10px'}}>Inicio de sesión</h3>
+              <h3 className="text-center" style={{padding: '10px',fontFamily: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif'}}>Inicio de sesión</h3>
               <CardBody>
                 <Container>
                   <Row>
@@ -72,7 +72,7 @@ export const Login = () => {
                     </Col>
 
                     <Container>
-                    <h6 className="text-center" style={{padding: '10px'}}>¿No tienes cuenta?  <a href="register"
+                    <h6 className="text-center" style={{padding: '10px',fontFamily: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif'}}>¿No tienes cuenta?  <a href="register"
                     onRegister={(email, password) => {navigateR("/register");}}>Regístrate</a></h6>
                     </Container>
 

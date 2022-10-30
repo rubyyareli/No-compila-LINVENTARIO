@@ -9,8 +9,8 @@ import { LOGIN_PAGE } from './../../../utils/colors';
 
 const navbaritems = [
   {
-    text: 'Inicio',
     link: 'www.google.com',
+    scr: 'https://images.emojiterra.com/google/noto-emoji/v2.034/512px/2764.png',
   },
   {
     text: 'Acerca',
@@ -34,7 +34,7 @@ const navbaritems = [
   },
   {
     text: 'Ingresar',
-    link: 'www.google.com',
+    link: '/login',
   },
   {
   },

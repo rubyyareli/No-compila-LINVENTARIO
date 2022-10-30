@@ -13,7 +13,7 @@ import {
 
 import {
   HeroImage,HeroImage1,HeroLINVENTARIO, PChico,PGrande, HeroText,HeroTitle,HeroTextButton,HeroDescription,HeroSubTitle,HeroParrafo1,HeroParrafo2,
-} from './styles';
+} from './index.css';
 
 import { View } from './../components/page/view/view';
 import { LOGIN_PAGE } from './../utils/colors';

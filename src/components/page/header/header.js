@@ -7,6 +7,7 @@ import {
 } from './styles';
 import { Container, Row, Col } from 'reactstrap';
 import { pageColors } from './../../../utils/colors';
+import { Link } from 'react-router-dom';
 
 export const Header = ({ theme, items, searchbar }) => {
   return (
@@ -15,14 +16,10 @@ export const Header = ({ theme, items, searchbar }) => {
         <Row>
           <Col md="10">
             {items.map((x, i) => (
-              <TopNavLink
-                textColor={pageColors[theme].navbarLinkText}
-                bgColor={pageColors[theme].navbarLink}
-                activeColor={pageColors[theme].navbarLinkActive}
-                key={i}
-                href={x.link}
-              >
+              <TopNavLink textColor={pageColors[theme].navbarLinkText}  bgColor={pageColors[theme].navbarLink} activeColor={pageColors[theme].navbarLinkActive}>
+              <Link key={i} to={x.link} >
                 {x.text}
+              </Link>
               </TopNavLink>
             ))}
           </Col>
