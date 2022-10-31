@@ -80,6 +80,8 @@ export const View = (props) => {
           <NavLink tag={RRNavLink} to="/newProduct">Producto</NavLink>
           <NavLink tag={RRNavLink} to="/newTransaction">Transaccion</NavLink>
           <NavLink tag={RRNavLink} to="/dashboard">Menu</NavLink>
+          <NavLink tag={RRNavLink} to="/search">Buscar</NavLink>
+          <NavLink tag={RRNavLink} to="/profile">Perfil</NavLink>
           </Nav>
         </Navbar>
       </Row>
