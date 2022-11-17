@@ -1,5 +1,6 @@
 import React from 'react';
 import {Line} from 'react-chartjs-2';
+import Chart from 'chart.js/auto';
 import '../../assets/css/graphics.css';
 
 function Graphics (props){
@@ -18,10 +19,11 @@ function Graphics (props){
         pointHoverBorderColor:'rgba(73,155,234,1)',
         pointRadius:1,
         pointHitRadius:10,
-        data:[0.17, 19, 156, 357, 565, 1149]
+        data: props.values
       }
     ]
   }
+
   return(
     <div className='containerGrafica'>
       <Line data={data}/>

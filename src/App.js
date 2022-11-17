@@ -15,11 +15,11 @@ export const App = () => {
   return(
     <Router>
       <Routes>
-      <Route exact path="/" element={<Index />}/>
-      <Route path="/login" element={<Login />}/>
-      <Route path="/register" element={<Register/>}/>
-      <Route path="/main" element={<Main />}/>
-      <Route exact path="/newProduct" element={<NewProduct />}></Route>
+      <Route path="/" element={<Index />} exact />
+      <Route path="/login" element={<Login />} exact/>
+      <Route path="/register" element={<Register/>} exact/>
+      <Route path="/main" element={<Main />} exact/>
+      <Route exact path="/newProduct" element={<NewProduct />} />
       <Route exact path="/newTransaction" element={<NewTransaction />}></Route>
       <Route exact path="/dashboard" element={<Dashboard />}></Route>
       <Route exact path="/search" element={<Search />}></Route>

@@ -12,6 +12,7 @@ import { withTheme } from 'styled-components';
 import CardsHeader  from "../components/dashboard/cardsHeader"
 import Cards  from "../components/dashboard/cards"
 import Graphics from "../components/dashboard/graphics"
+import TableMaterial from './TableMaterial';
 
 const useStyles = makeStyles(()=>({
   root:{
@@ -23,14 +24,22 @@ const useStyles = makeStyles(()=>({
   container:{
     paddingTop: '40px',
     alignItems: 'center'
+  },
+  containerGrafica:{
+    marginTop: '40px'
+  },
+  containerTabla:{
+    marginTop: '40px'
   }
 }));
+
+let numbers = [0.17, 19, 3, 357, 565, 1];
 
 export const Dashboard = () => {
   let navigate = useNavigate();
   const classes = useStyles();
   return (
-    <View theme={MAIN_PAGE} banner={''} className="text-center" >
+    <View theme={MAIN_PAGE}  className="text-center" >
 
       <div className={classes.root}>
         <Grid container spacing={3}>
@@ -72,8 +81,8 @@ export const Dashboard = () => {
 
           <Grid item xs={0} sm={0} md={1} lg={1} xl={1}></Grid>
 
-          <Grid item xs={12} sm={12} md={5} lg={5} xl={5} className={classes.container}>
-            <Graphics/>
+          <Grid item xs={12} sm={12} md={5} lg={5} xl={5} className={classes.containerGrafica}>
+            <Graphics values = {numbers}></Graphics>
           </Grid>
 
         </Grid>
